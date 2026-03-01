@@ -2,469 +2,422 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Open-Vocabulary Intention-Guided Object Detection using Vision Language Models">
-  <meta property="og:title" content="What Do You Really Want? - OV-IGOD"/>
-  <meta property="og:description" content="Open-Vocabulary Intention-Guided Object Detection Meets Vision Language Models"/>
+  <meta name="description" content="Dual-Reward Reinforcement Learning for Open-Vocabulary Intention-Guided Object Detection in Diverse Scenes">
+  <meta property="og:title" content="TriIntentBench & Intent-R1"/>
+  <meta property="og:description" content="Dual-Reward RL for Open-Vocabulary Intention-Guided Object Detection"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/myimages/Fig1.png" />
+  <meta property="og:image" content="static/myimages/eyecatch.png"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="What Do You Really Want? - OV-IGOD">
-  <meta name="twitter:description" content="Open-Vocabulary Intention-Guided Object Detection using Vision Language Models">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/myimages/Fig1.png">
+  <meta name="twitter:title" content="TriIntentBench & Intent-R1">
+  <meta name="twitter:description" content="Dual-Reward RL for Open-Vocabulary Intention-Guided Object Detection">
+  <meta name="twitter:image" content="static/myimages/eyecatch.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="intention-guided object detection, vision language models, open vocabulary, embodied AI, P-FiLM, Florence-2">
+  <meta name="keywords" content="TriIntentBench, Intent-R1, OV-IGOD, open-vocabulary, intention-guided object detection, reinforcement learning, GRPO">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>What Do You Really Want? - Open-Vocabulary Intention-Guided Object Detection</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <title>Dual-Reward Reinforcement Learning for Open-Vocabulary Intention-Guided Object Detection in Diverse Scenes</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-
-  <script src="static/js/index.js"></script>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">What Do You Really Want? - Open-Vocabulary Intention-Guided Object Detection Meets Vision Language Models</h1>
+            <h1 class="title is-2 publication-title">Dual-Reward Reinforcement Learning for Open-Vocabulary Intention-Guided Object Detection in Diverse Scenes</h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">Anonymous Author(s)</span>
-                  </div>
+              <span class="author-block">Anonymous Authors</span>
+            </div>
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">ECCV 2026 Submission</span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Anonymous Organization<br>ICRA 2026 (Under Review)</span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Paper PDF link -->
-                      <span class="link-block">
-                        <a href="#" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper - Coming Soon</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="#" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper - Coming Soon</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code - Coming Soon</span>
                   </a>
                 </span>
-
-                <!-- Dataset Link -->
                 <span class="link-block">
-                  <a href="#" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-database"></i>
-                  </span>
-                  <span>Dataset - Coming Soon</span>
-                </a>
-              </span>
+                  <a href="#" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span>Dataset - Coming Soon</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Accurately identifying and localizing objects that satisfy implicit user intentions remains a fundamental challenge for intelligent assistive systems. We present <strong>TriIntentBench</strong>, a large-scale benchmark for open-vocabulary intention-guided object detection with free-form, implicit intention descriptions and instance-level bounding-box annotations spanning egocentric, indoor third-person, and outdoor scenarios. We further propose <strong>Intent-R1</strong>, a two-stage post-training framework for pretrained vision-language models: supervised fine-tuning for task alignment, followed by dual-reward GRPO post-training that focuses updates on informative samples and jointly optimizes localization accuracy and intention-region consistency. Extensive experiments show robust generalization across all three scenario types, achieving mIoU of <strong>64.12</strong>, <strong>56.35</strong>, and <strong>65.87</strong> on egocentric, indoor, and outdoor subsets, respectively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser is-light">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Overview</h2>
+            <p class="has-text-left">
+              Overview of our Open-Vocabulary Intention-Guided Object Detection (OV-IGOD) task. Given an image and a free-form intention description (e.g., "I'm about to leave the house and I need to make sure I won't lose track of time while I'm out"), our model localizes the object instance that best satisfies the user's intention (e.g., a wristwatch), even when the target object is not explicitly specified in the intention description.
+            </p>
+            <img src="static/myimages/eyecatch.png" alt="Task overview of OV-IGOD" style="width: 100%; max-width: 1000px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Key Contributions</h2>
+            <div class="content has-text-justified">
+              <ul>
+                <li>We introduce <strong>TriIntentBench</strong>, a large-scale benchmark for open-vocabulary intention-guided object detection with free-form, implicit intention descriptions and instance-level bounding-box annotations, spanning egocentric, indoor third-person, and outdoor scenarios.</li>
+                <li>We propose <strong>Intent-R1</strong>, a two-stage training pipeline for open-vocabulary intention-guided object detection: supervised fine-tuning for task alignment, followed by dual-reward GRPO post-training with an update scheme that focuses RL updates on informative samples.</li>
+                <li>Extensive experiments on TriIntentBench demonstrate that our approach generalizes robustly across egocentric and third-person indoor/outdoor scenarios, consistently outperforming strong open-vocabulary object detector/segmenter and VLM baselines.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Video Section -->
-<section class="hero is-small">
-  <div class="container is-max-desktop">
+  <section class="hero is-small">
     <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <video controls style="width: 100%; max-width: 1000px;">
-            <source src="static/video/final_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video section -->
-
-<!-- Teaser image-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <img src="static/myimages/Fig1.png" alt="Overall pipeline of OV-IGOD approach" style="width: 100%; max-width: 1000px;"/>
-          <p class="has-text-centered is-size-6 has-text-grey">
-            <strong>Fig. 1.</strong> Open-Vocabulary Intention-Guided Object Detection task overview. Users provide natural language instructions describing their intentions, and our model localizes objects in indoor scenes that can fulfill these intentions, bridging the gap between human intentions and object affordances.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End teaser image -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Understanding and responding to human intentions in visual environments is a crucial capability for embodied agents to provide intuitive assistance. We introduce <strong>Open-Vocabulary Intention-Guided Object Detection (OV-IGOD)</strong>, a novel task requiring detection of objects that fulfill free-form human intentions. This task presents unique challenges beyond traditional object detection or visual grounding, as it demands understanding implicit needs, reasoning about object affordances, and precise localizing relevant targets.
-          </p>
-          <p>
-            To advance research in this direction, we introduce <strong>OV-IGOD Bench</strong>, a novel benchmark featuring 9.3k images and 21.5k diverse intention annotations that preserve contextual relevance, spatial precision, and natural language variation. Our data construction pipeline employs a multi-stage approach combining detail caption generation by InternVL3-8B, intention prompting with GPT-4o, and quality review.
-          </p>
-          <p>
-            Leveraging this benchmark, we develop <strong>PF-Florence</strong>, which enhances the Florence-2 vision-language model with our proposed Prompted Feature-wise Linear Modulation (P-FiLM) mechanism. P-FiLM addresses limitations in conventional modulation approaches by incorporating learnable queries that selectively extract and utilize textual information for visual feature conditioning. Our method significantly outperforms existing approaches on standard object detection metrics. Real-world experiments further validate the practical applicability of our approach in zero-shot transfer settings.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Dataset Construction -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">OV-IGOD Benchmark Construction</h2>
-          <img src="static/myimages/Fig2.png" alt="Multi-stage data construction pipeline" style="width: 100%; max-width: 1000px;"/>
-          <p class="has-text-centered is-size-6 has-text-grey">
-            <strong>Fig. 2.</strong> Our multi-stage data construction pipeline for OV-IGOD dataset. The process consists of three key stages: detail caption generation, intention generation, and quality checking, ultimately producing triplets of ⟨image, intention, bounding box⟩.
-          </p>
-          
-          <div class="content has-text-justified" style="margin-top: 2rem;">
-            <p>
-              We build upon the SUN-RGBD dataset and construct <strong>OV-IGOD Bench</strong> through a novel multi-stage pipeline:
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Method: Intent-R1</h2>
+            <p class="has-text-left">
+              Overview of our two-stage training pipeline. Given (x_img, x_int), we first perform SFT to adapt Rex-Omni to OV-IGOD, and then apply Dual-Reward GRPO post-training with an IoU-based geometry reward and an FG-CLIP intention-alignment reward, regularized by KL divergence to a frozen reference policy.
             </p>
-            <ul>
-              <li><strong>Detail Caption Generation:</strong> Using InternVL3-8B to generate comprehensive scene descriptions capturing fine-grained visual details and spatial relationships.</li>
-              <li><strong>Intention Generation:</strong> Employing GPT-4o with specialized prompting to create authentic human intentions that reflect natural language expressions of needs without explicitly naming target objects.</li>
-              <li><strong>Quality Checking:</strong> Implementing rigorous validation across scene-context alignment, ambiguity assessment, and format diversity to ensure high annotation quality.</li>
-            </ul>
-            <p>
-              The resulting dataset contains <strong>9.3K images</strong> with <strong>21.5K intention annotations</strong>, averaging 2.31 intentions per image with significant diversity in linguistic structure (9-24 words, mean 14.52).
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End dataset construction -->
-
-
-
-
-<!-- Method Section -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">PF-Florence: Prompted Feature-wise Linear Modulation</h2>
-          <img src="static/myimages/Fig3.png" alt="PF-Florence architecture overview" style="width: 100%; max-width: 1000px;"/>
-          <p class="has-text-centered is-size-6 has-text-grey">
-            <strong>Fig. 3.</strong> Architecture overview of our PF-Florence model. (a) Overall design showing the sequence-to-sequence framework with tokenizer, vision encoder enhanced with P-FiLM layers, and transformer decoders for intention-guided object detection. (b) Integration of P-FiLM layers within the DaViT vision encoder. (c) Detailed structure of the P-FiLM layer with Prompted Generation Module (PGM).
-          </p>
-          
-          <div class="content has-text-justified" style="margin-top: 2rem;">
-            <h3 class="title is-4">Key Innovation: P-FiLM Mechanism</h3>
-            <p>
-              Our <strong>Prompted Feature-wise Linear Modulation (P-FiLM)</strong> addresses limitations in conventional FiLM approaches through:
-            </p>
-            <div class="columns">
-              <div class="column">
-                <h4 class="title is-5">Prompted Generation Module (PGM)</h4>
-                <ul>
-                  <li>Dynamically generates input-conditioned prompts from learnable components</li>
-                  <li>Uses global average pooling and learnable queries to extract relevant textual information</li>
-                  <li>Enables adaptive focus on different aspects of intention text based on visual context</li>
-                </ul>
-              </div>
-              <div class="column">
-                <h4 class="title is-5">Feature Modulation</h4>
-                <ul>
-                  <li>Generates scaling (γ) and shift (β) parameters from prompt features</li>
-                  <li>Modulates visual features through element-wise operations</li>
-                  <li>Strategically integrated between spatial and channel attention blocks in DaViT encoder</li>
-                </ul>
-              </div>
+            <img src="static/myimages/model.png" alt="Intent-R1 two-stage training overview" style="width: 100%; max-width: 1000px;"/>
+            <div class="content has-text-justified" style="margin-top: 1.2rem;">
+              <ul>
+                <li>We propose a two-stage training pipeline that performs SFT for task alignment, followed by dual-reward GRPO post-training with an update scheme that focuses RL updates on informative samples.</li>
+                <li>In the GRPO stage, we further introduce an intention-alignment reward based on text-region similarity, and combine it with an IoU-derived geometry reward to form a dual-reward objective.</li>
+              </ul>
             </div>
-            <p>
-              Unlike conventional FiLM that applies static text representations, P-FiLM actively queries relevant information from intention text, enabling better understanding of complex free-form intentions and achieving superior performance in intention-guided object detection.
-            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End method section -->
+  </section>
 
-
-<!-- Results Section -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Experimental Results</h2>
-          
-          <!-- Quantitative Results -->
-          <div class="content has-text-justified" style="margin-bottom: 2rem;">
-            <h3 class="title is-4">Quantitative Results</h3>
-            <p>
-              Our PF-Florence model achieves state-of-the-art performance on the OV-IGOD benchmark, significantly outperforming existing approaches:
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Quantitative Results</h2>
+            <p class="has-text-left">
+              Quantitative comparison on TriIntentBench across Egocentric, 3rd-Person Indoor, and 3rd-Person Outdoor subsets. We report mIoU and AP (%) at IoU thresholds 0.50, 0.75, and 0.50:0.95.
             </p>
-            
             <div class="table-container">
-              <table class="table is-striped is-hoverable" style="margin: 0 auto;">
+              <table class="table is-striped is-hoverable is-fullwidth is-size-7">
                 <thead>
                   <tr>
-                    <th>Method</th>
-                    <th>mAP50:95</th>
-                    <th>mAP50</th>
-                    <th>mAP75</th>
+                    <th rowspan="2">Method</th>
+                    <th colspan="4">Egocentric</th>
+                    <th colspan="4">3rd-Person Indoor</th>
+                    <th colspan="4">3rd-Person Outdoor</th>
+                  </tr>
+                  <tr>
+                    <th>mIoU</th>
+                    <th>AP@50</th>
+                    <th>AP@75</th>
+                    <th>AP50:95</th>
+                    <th>mIoU</th>
+                    <th>AP@50</th>
+                    <th>AP@75</th>
+                    <th>AP50:95</th>
+                    <th>mIoU</th>
+                    <th>AP@50</th>
+                    <th>AP@75</th>
+                    <th>AP50:95</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td colspan="4" style="font-weight: bold; background-color: #f5f5f5;">Direct Prediction Methods</td>
+                    <td colspan="13" style="font-weight: bold; background-color: #f5f5f5;">Open-vocabulary object detectors / segmenters</td>
+                  </tr>
+                  <tr>
+                    <td>YOLO-World</td>
+                    <td>11.18</td><td>9.07</td><td>7.45</td><td>7.07</td>
+                    <td>12.20</td><td>9.55</td><td>6.26</td><td>6.48</td>
+                    <td>13.50</td><td>11.20</td><td>8.50</td><td>9.30</td>
+                  </tr>
+                  <tr>
+                    <td>GroundingDINO-T</td>
+                    <td>12.95</td><td>10.30</td><td>8.20</td><td>7.88</td>
+                    <td>10.71</td><td>8.53</td><td>5.89</td><td>5.90</td>
+                    <td>14.72</td><td>12.16</td><td>9.60</td><td>9.36</td>
+                  </tr>
+                  <tr>
+                    <td>GroundingDINO-B</td>
+                    <td>13.08</td><td>10.54</td><td>8.54</td><td>8.15</td>
+                    <td>12.84</td><td>10.28</td><td>7.44</td><td>7.46</td>
+                    <td>14.60</td><td>12.25</td><td>9.68</td><td>9.41</td>
+                  </tr>
+                  <tr>
+                    <td>SAM3</td>
+                    <td>16.38</td><td>13.25</td><td>10.52</td><td>10.28</td>
+                    <td>11.93</td><td>9.34</td><td>5.93</td><td>5.97</td>
+                    <td>12.20</td><td>10.80</td><td>7.90</td><td>7.60</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="13" style="font-weight: bold; background-color: #f5f5f5;">Open-source VLMs</td>
+                  </tr>
+                  <tr>
+                    <td>Qwen3-VL-2B</td>
+                    <td>29.98</td><td>30.74</td><td>26.34</td><td>25.01</td>
+                    <td>8.67</td><td>8.33</td><td>4.07</td><td>4.60</td>
+                    <td>34.12</td><td>35.11</td><td>28.84</td><td>27.36</td>
+                  </tr>
+                  <tr>
+                    <td>InternVL3.5-2B</td>
+                    <td>22.45</td><td>22.02</td><td>10.83</td><td>11.94</td>
+                    <td>23.87</td><td>23.43</td><td>14.65</td><td>14.76</td>
+                    <td>35.90</td><td>37.75</td><td>29.86</td><td>28.15</td>
+                  </tr>
+                  <tr>
+                    <td>Qwen2.5-VL-3B</td>
+                    <td>15.95</td><td>13.41</td><td>8.97</td><td>9.12</td>
+                    <td>21.27</td><td>18.98</td><td>8.13</td><td>9.44</td>
+                    <td>40.34</td><td>42.15</td><td>34.78</td><td>33.14</td>
+                  </tr>
+                  <tr>
+                    <td>Qwen3-VL-4B</td>
+                    <td>51.25</td><td>53.36</td><td>48.27</td><td>45.66</td>
+                    <td>37.67</td><td>39.77</td><td>30.54</td><td>28.74</td>
+                    <td>46.10</td><td>49.02</td><td>41.01</td><td>38.68</td>
+                  </tr>
+                  <tr>
+                    <td>InternVL3.5-4B</td>
+                    <td>35.73</td><td>36.84</td><td>28.81</td><td>27.79</td>
+                    <td>28.36</td><td>26.34</td><td>18.82</td><td>19.41</td>
+                    <td>42.10</td><td>44.60</td><td>35.20</td><td>33.50</td>
                   </tr>
                   <tr>
                     <td>Qwen2.5-VL-7B</td>
-                    <td>3.94</td>
-                    <td>6.88</td>
-                    <td>3.12</td>
+                    <td>18.37</td><td>15.92</td><td>11.67</td><td>11.57</td>
+                    <td>22.48</td><td>20.92</td><td>7.75</td><td>9.85</td>
+                    <td>42.97</td><td>46.34</td><td>37.06</td><td>35.19</td>
                   </tr>
                   <tr>
-                    <td>GPT-4V</td>
-                    <td>5.31</td>
-                    <td>10.47</td>
-                    <td>6.28</td>
+                    <td>Qwen3-VL-8B</td>
+                    <td>51.93</td><td>54.57</td><td>48.47</td><td>46.02</td>
+                    <td>38.69</td><td>41.32</td><td>31.25</td><td>29.55</td>
+                    <td>48.69</td><td>52.60</td><td>43.21</td><td>40.63</td>
                   </tr>
                   <tr>
-                    <td colspan="4" style="font-weight: bold; background-color: #f5f5f5;">Two-Stage Pipeline Methods</td>
+                    <td>InternVL3.5-8B</td>
+                    <td>38.58</td><td>40.90</td><td>31.51</td><td>30.02</td>
+                    <td>30.60</td><td>31.31</td><td>22.85</td><td>21.78</td>
+                    <td>47.57</td><td>51.10</td><td>42.55</td><td>40.20</td>
                   </tr>
                   <tr>
-                    <td>Cambrian-1-8B + Grounding DINO</td>
-                    <td>38.88</td>
-                    <td>48.12</td>
-                    <td>41.78</td>
+                    <td>MiniCPM-V-4.5-8B</td>
+                    <td>19.34</td><td>16.87</td><td>12.59</td><td>12.48</td>
+                    <td>23.67</td><td>21.44</td><td>9.13</td><td>10.28</td>
+                    <td>41.72</td><td>43.56</td><td>35.29</td><td>34.15</td>
                   </tr>
                   <tr>
-                    <td>Phi-4-multimodal + Grounding DINO</td>
-                    <td>40.03</td>
-                    <td>49.13</td>
-                    <td>43.29</td>
+                    <td>GLM-4.1V-9B</td>
+                    <td>52.46</td><td>55.73</td><td>48.47</td><td>45.60</td>
+                    <td>41.56</td><td>44.99</td><td>33.38</td><td>31.90</td>
+                    <td>47.78</td><td>51.38</td><td>39.83</td><td>38.23</td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="13" style="font-weight: bold; background-color: #f5f5f5;">Closed-source VLM</td>
                   </tr>
                   <tr>
-                    <td>Qwen2.5-VL-7B + Grounding DINO</td>
-                    <td>39.92</td>
-                    <td>49.30</td>
-                    <td>42.18</td>
-                  </tr>
-                  <tr>
-                    <td>InternVL3-8B + Grounding DINO</td>
-                    <td>37.61</td>
-                    <td>46.65</td>
-                    <td>40.61</td>
-                  </tr>
-                  <tr>
-                    <td>GPT-4V + Grounding DINO</td>
-                    <td>40.75</td>
-                    <td>49.21</td>
-                    <td>42.72</td>
+                    <td>GPT-5.2</td>
+                    <td>37.71</td><td>39.25</td><td>30.56</td><td>29.63</td>
+                    <td>30.21</td><td>30.73</td><td>21.31</td><td>20.78</td>
+                    <td>45.79</td><td>49.53</td><td>40.91</td><td>39.46</td>
                   </tr>
                   <tr style="font-weight: bold; background-color: #e8f5e8;">
-                    <td>PF-Florence (Ours)</td>
-                    <td><strong>52.91</strong></td>
-                    <td><strong>66.97</strong></td>
-                    <td><strong>56.47</strong></td>
+                    <td>Intent-R1 (Ours)</td>
+                    <td><strong>64.12</strong></td><td><strong>68.44</strong></td><td><strong>60.13</strong></td><td><strong>56.95</strong></td>
+                    <td><strong>56.35</strong></td><td><strong>60.87</strong></td><td><strong>46.36</strong></td><td><strong>45.18</strong></td>
+                    <td><strong>65.87</strong></td><td><strong>74.12</strong></td><td><strong>57.89</strong></td><td><strong>54.78</strong></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            
-            <p style="margin-top: 1rem;">
-              Our method demonstrates significant improvements: <strong>+12.16 (30% relative improvement) mAP50:95</strong>, <strong>+17.76 (36% improvement) mAP50</strong>, and <strong>+13.75 (30% improvement) mAP75</strong> compared to the best baseline (GPT-4V + Grounding DINO).
-            </p>
-          </div>
-
-          <!-- Qualitative Results -->
-          <h3 class="title is-4">Qualitative Results</h3>
-          <img src="static/myimages/Fig4.png" alt="Qualitative comparison results" style="width: 100%; max-width: 1000px;"/>
-          <p class="has-text-centered is-size-6 has-text-grey">
-            <strong>Fig. 4.</strong> Qualitative comparison on OV-IGOD test cases. Our method demonstrates superior intention understanding and precise localization compared to baseline approaches. Green boxes indicate ground truth annotations, while red boxes show model predictions.
-          </p>
-          
-          <div class="content has-text-justified" style="margin-top: 1rem;">
-            <p>
-              Our qualitative results show that PF-Florence consistently identifies objects that truly align with user intentions, while baseline methods often miss targets or identify contextually inappropriate alternatives. The P-FiLM mechanism enables precise understanding of complex free-form intentions and accurate object localization.
+            <p class="has-text-left" style="margin-top: 1rem;">
+              Intent-R1 achieves the best score on every reported metric across all three subsets, with clear gains over strong open-vocabulary detector/segmenter and VLM baselines.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End results section -->
+  </section>
 
-<!-- Real-World Experiments Section -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Real-World Experiments</h2>
-          
-          <div class="content has-text-justified" style="margin-bottom: 2rem;">
-            <p>
-              To further validate the practical applicability of our approach, we conduct real-world experiments using naturally captured scenarios that reflect typical user intentions in everyday environments. Due to the limited sample size in real-world settings, we evaluate performance using Intersection over Union (IoU) as the primary metric, comparing our method against representative baselines from both single-stage and two-stage approaches.
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Qualitative Results</h2>
+            <p class="has-text-left">
+              Comparison of predictions by Ground Truth, strong VLM baselines, and Intent-R1. Green boxes indicate targets and red boxes indicate model predictions.
             </p>
-            
-            <!-- Real-World Video -->
-            <div class="columns is-centered has-text-centered" style="margin: 2rem 0;">
-              <div class="column is-four-fifths">
-                <video autoplay muted loop style="width: 100%; max-width: 1000px;">
-                  <source src="static/video/real-world_setting.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-            
-            <!-- Real-World Quantitative Results -->
-            <h3 class="title is-4">Quantitative Results</h3>
-            <p>
-              Our PF-Florence achieves superior performance in real-world scenarios, demonstrating strong practical applicability:
+            <img src="static/myimages/quality_success.png" alt="Qualitative success cases" style="width: 100%; max-width: 1000px; margin-top: 1rem;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Ablation Study</h2>
+            <p class="has-text-left">
+              Each component of Intent-R1 contributes to the overall performance.
             </p>
-            
             <div class="table-container">
-              <table class="table is-striped is-hoverable" style="margin: 0 auto;">
+              <table class="table is-bordered is-fullwidth is-size-7">
                 <thead>
                   <tr>
-                    <th>Method</th>
-                    <th>IoU (%)</th>
+                    <th>Variant</th>
+                    <th>SFT</th>
+                    <th>GRPO</th>
+                    <th>Dual reward</th>
+                    <th>Data-efficient filter</th>
+                    <th>Ego mIoU</th>
+                    <th>Indoor mIoU</th>
+                    <th>Outdoor mIoU</th>
+                    <th>Avg. mIoU</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>GPT-4V</td>
-                    <td>9.35</td>
+                    <td>(i)</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>57.04</td>
+                    <td>48.80</td>
+                    <td>60.01</td>
+                    <td>55.28</td>
                   </tr>
                   <tr>
-                    <td>GPT-4V + Grounding DINO</td>
-                    <td>74.98</td>
+                    <td>(ii)</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>46.02</td>
+                    <td>38.14</td>
+                    <td>51.20</td>
+                    <td>45.12</td>
+                  </tr>
+                  <tr>
+                    <td>(iii)</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>✓</td>
+                    <td>59.97</td>
+                    <td>53.25</td>
+                    <td>61.70</td>
+                    <td>58.31</td>
+                  </tr>
+                  <tr>
+                    <td>(iv)</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td></td>
+                    <td>61.33</td>
+                    <td>54.74</td>
+                    <td>63.29</td>
+                    <td>59.79</td>
                   </tr>
                   <tr style="font-weight: bold; background-color: #e8f5e8;">
-                    <td>PF-Florence (Ours)</td>
-                    <td><strong>81.97</strong></td>
+                    <td>(v)</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td>✓</td>
+                    <td><strong>64.12</strong></td>
+                    <td><strong>56.35</strong></td>
+                    <td><strong>65.87</strong></td>
+                    <td><strong>62.11</strong></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            
-            <p style="margin-top: 1rem;">
-              Our method achieves <strong>81.97% IoU</strong>, significantly outperforming GPT-4V (9.35% IoU) and GPT-4V + Grounding DINO (74.98% IoU), with <strong>+6.99% improvement</strong> over the best baseline.
-            </p>
-          </div>
-
-          <!-- Real-World Qualitative Results -->
-          <h3 class="title is-4">Qualitative Analysis</h3>
-          <img src="static/myimages/Fig5.png" alt="Real-world qualitative comparison results" style="width: 100%; max-width: 1000px;"/>
-          <p class="has-text-centered is-size-6 has-text-grey">
-            <strong>Fig. 5.</strong> Qualitative comparison on real-world test cases. Green boxes indicate ground truth, red boxes show predictions.
-          </p>
-          
-          <div class="content has-text-justified" style="margin-top: 1rem;">
-            <p>
-              Figure 5 demonstrates the practical advantages of our approach. Single-stage methods like GPT-4V fail to provide precise localization despite understanding textual intentions. Two-stage pipeline methods achieve better localization but suffer from intention-object misalignment—for example, when seeking "something to snack on", they incorrectly detect irrelevant objects like tennis balls alongside the intended snack. Our PF-Florence consistently identifies objects that truly align with user intentions while avoiding contextually irrelevant detections.
-            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End real-world experiments section -->
+  </section>
 
-
-<!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <div class="content has-text-centered">
         <p class="is-size-4 has-text-grey">Coming Soon...</p>
-        <p class="has-text-grey">BibTeX citation will be available after publication.</p>
       </div>
     </div>
-</section>
-<!--End BibTex citation -->
-
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page is adapted from the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
